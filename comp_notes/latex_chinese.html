@@ -15,7 +15,7 @@ Released   : 20130406
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Doris Lee</title>
+<title>Typing Traditional Chinese in LaTeX</title>
 <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
@@ -33,47 +33,30 @@ Released   : 20130406
 		</div>
 	</div>
 	<div id="logo" class="container">
-		<h1><a href="#">Doris Lee</a></h1>
-		<p>Sophmore student at UC Berkeley in Physics and Astronomy. </p>
-		<p>Also interested in artificial intelligence, data science and design engineering. </p>
+		<h1><a href="#">Typing Traditional Chinese in LaTeX.</a></h1>
+		<p></p>
 	</div>
 	<div id="page" class="container">
 		<div>
 			<div class="entry">
-				<p> Text</p>
+				<p> I recently tried to type my CV in Chinese, but I found out that normal LaTeX doesn't compile Chinese characters. 
+				</p>
+				After looking into the use of CJK and XeLaTeX, I modified the preamble with suggestions from <a href="http://www.goodmami.org/2009/04/traditional-and-simplified-chinese-in-latex/">this website</a> so that Traditional Chinese can be compiled with the normal pdflatex builds.
+				<PRE> 
+				\documentclass{article}
+				\usepackage{CJK}
+				\newcommand{\zh}[1]{\begin{CJK}{UTF8}{bsmi}#1\end{CJK}}
+				\newcommand{\zhs}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
+				\begin{document}
+					\begin{CJK}{UTF8}{gbsn}
+						\zh{繁體中文}
+						\\ 繁體中文缺字			
+					\end{CJK}
+				\end{document}
+				</PRE> 
+				Only simplified chinese characters can be interpreted if it is directly typed in the text body. By using the \zh command defined in the preamble, traditional characters can be interpreted. Also, it is often more convenient to group together lots of characters and just do one large \zh command to collect them all.
 			</div>
-		</div>
-	</div>
-	<div id="three-column" class="container">
-		<div class="tbox1">
-			<div class="box-style box-style01">
-				<div class="content">
-					<div class="image"><img src="images/phys_astro.png" width="324" height="200" alt="" /></div>
-					<h2>Science</h2>
-					<p>Physics and Astronomy Notes, Research</p>
-					<a href="#" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox2">
-			<div class="box-style box-style02">
-				<div class="content">
-					<div class="image"><img src="images/projects.png" width="324" height="200" alt="" /></div>
-					<h2>Personal Projects</h2>
-					<p> 3D Prints, Designs, HCI Projects, code projects </p>
-					<a href="#" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox3">
-			<div class="box-style box-style03">
-				<div class="content">
-					<div class="image"><img src="images/img03.jpg" width="324" height="200" alt="" /></div>
-					<h2>Tech</h2>
-					<p>Computing Notes, code snippets and tips </p>
-					<a href="#" class="button">Learn More</a>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 </div>
