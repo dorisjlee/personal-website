@@ -41,10 +41,17 @@ Released   : 20130406
 			<div class="entry">
 				<p>IPython notebook is not only a great way for programmer and scientist to visualize large data sets. They are also extremely convenient when communicating ideas via code along with its MathJax/LaTeX, Markdown, and various multimedia embedding features. <a href="http://nbviewer.ipython.org/">Nbviewer</a> is a webapp that allows people to share a presentatable version of their notebook rather than the default mardown cells of .nb files. It took me a while to figure out the interface of Nbviewer to be a bit too obvious and too good to be true. All you need to do is copy the url of the page and paste it in the textbox on NbViewer. Now anyone with the link of the resulting page can see the notebook GUI not just the code for markdown cells. The caveat here is that the GitHub repo must be public, so that the server can actually access it and non-collaborators with the link can see it. </p>
 				<p>If you are someone who uses this feature alot, there is a <a href="https://chrome.google.com/webstore/detail/open-in-nbviewer/ihlhlehlibooakiicbiakgojckpnlali"> cool Chrome extension</a> (circled red in picture below) that skips the step of going to nbviewer webapp and typing the link in. </p>
-				<br>
 				<img src ="nbviewer.png" height=500></img>
+				<p>
+				I have noticed that sometimes the nbviewer webapp freezes when the notebook is too large while it is "Typesetting math ...%" (message at lower left hand corner). This error typically happens to notebooks that contains multiple LaTeX formatting because MathJax takes too long to load. While there isn't really a workaround on nbviewer, a brute force way to resolve this is to just copy the text in the .ipynb file and save it locally in a text file (or git clone the repo containing the notebook) then open the notebook locally in your browser using 
+				<br>
+				ipython notebook --no-mathjax
+				<br>
+				which means it will no longer be filled with nicely marked-down equations but at least you get to read everything else.
+				</p>
 				<br>
 				<p>Another cool thing about IPython is the nbconvert, which converts the notebook to useful formats (pdf, markdown for slides, paper and presentation). This <a href="http://ipython.org/ipython-doc/1/interactive/nbconvert.html"> tutorial </a>provides a handy overview of these awesome nbconvert functions. Note that to use this feature you must first <a href="http://johnmacfarlane.net/pandoc/installing.html"> install PanDoc</a>.</p>
+
 			</div>
 		
 		</div>
