@@ -43,7 +43,6 @@ Released   : 20130406
 				This tutorial assumes that you have already <a href="https://www.virtualbox.org/wiki/Downloads"> downloaded the latest version of VirtualBox </a> and executed the .dmg file (or .exe for Windows).
 				</p>
 				<h1> Creating a Windows7 image </h1>
-				<h3>1) </h3>
 				<img src="virtualbox/setup0.png" height="500"></img>
 				<br>
 				<img src="virtualbox/setup1.png" height="500"></img>
@@ -57,15 +56,32 @@ Released   : 20130406
 				</p>
 				<h1>Starting up the virtual machine</h1>
 				<p>
-				Now this was the part that I was really stuck on. 
+				Now this was the part that I was really stuck on. The "FATAL: No bootable medium found! System halted" error is due to the fact that the virtual machine that you just set up doesn't have an operating system installed. Even though you told it that this was a windows virtual machine, it only configures the virtual box settings to that, you still need to boot the OS yourself.You can download the Windows .iso file <a href="http://www.techverse.net/download-windows-7-iso-x86-x64-microsofts-official-servers/">here</a>. Note that in the latter step you will be asked a Product Key, this can be found at the back of your computer if you have a native windows machine, or can be bought from Microsoft. 
 				</p>
 				<img src="virtualbox/noISOdetected.png" height="500"></img>
-
+				<p>
+				If you've ever rebooted a Windows machine, you know what I'm referring to (BIOS setup and all that fun stuff). The really cool thing here is that since this is a virtual machine, it doesn't have a physical CD Drive for you to boot the machine but you can "insert the CD" which is the .iso file and run it on your virtual machine. Put the downloaded .iso file into a directory that VirtualBox can find, and choose it in the  CD setting.
+				</p>
+				<img src="virtualbox/iso_install.png" height="500"></img>
+				
+				<p>
+				Then select the CD that corresponds to the installation iso file.You may have to restart virtualbox and your virtual machine for this to work.
+				</p>
+				<img src="virtualbox/iso_install2.png" height="500"></img>
+				
+				<p>
+				If it really doesn't work, try selecting the CD setting on the lower right hand corner of your vritaul machine and select the CD then restart the virtual machine (completely shutdown, not via the saved-state option)
+				</p>
+				<img src="virtualbox/iso_install3.png" height="500"></img>
 				<h1>Window OS installation steps</h1>
+				<br>
+				<img src="virtualbox/startup.png" height="500"></img>
+				<br>
 				<img src="virtualbox/wininstall.png" height="500"></img>
 				<br>
 				<img src="virtualbox/wininstall0.png" height="500"></img>
 				<br>
+				If you didn't allocate enough space for the OS to install, you may have to delete this virtual machine and start a new one with a larger virtual hardisk and allocate more memory. (Usually 15GB should be more than enough).
 				<img src="virtualbox/wininstall2.png" height="500"></img>
 				<br>
 				<img src="virtualbox/wininstall3.png" height="500"></img>
@@ -77,9 +93,6 @@ Released   : 20130406
 				<img src="virtualbox/wininstall6.png" height="500"></img>
 				<br>
 				<img src="virtualbox/wininstall7.png" height="500"></img>
-				<br>
-				<img src="virtualbox/startup.png" height="500"></img>
-				<br>
 
 				<h1>Optional: Using VirtualBox Guest Addition for adjustable screensize</h1>
 				<a href="http://download.virtualbox.org/virtualbox/4.3.12/VBoxGuestAdditions_4.3.12.iso">Download VBoxGuestAdditions_4.3.12.iso </a>from the  VirtualBox Website. This is a program that you need to run on your virtual machine, you send it to the virtual machine as if you insert a CD into that machine. To do this, you need to move the downloaded .iso file to a directory that the Virtual CD drive can detect.
