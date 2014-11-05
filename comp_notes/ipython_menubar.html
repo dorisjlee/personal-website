@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Vestibule 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130406
+
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55761522-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Computing Notes Template</title>
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li class="../current_page_item"><a href="index.html">Home</a></li>
+				<li><a href="../phys_astro.html">Physics and Astronomy</a></li>
+				<li><a href="../hci_proj.html">HCI and other projects</a></li>
+				<li><a href="../comp_notes.html">Computing Notes</a></li>
+				<li><a href="../about_me.html">About me</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="logo" class="container">
+		<h1><a href="#">Hiding IPython Notebook Menubar</a></h1>
+		<img src ="original_menubar.png" height=150></img>
+	</div>
+	<p>
+				
+				<p>
+	<div id="page" class="container">
+		<div>
+			<div class="entry">
+				<p>This is a quick entry on how to remove the menubar on IPython notebook, which can be sometimes helpful if you have a small screen and a zoomed in web browser.
+				The solution is suggested in this <a href="https://github.com/ipython/ipython/issues/5623"> git issue</a>, by simply add these line to your custom.js file:
+				<!-- HTML generated using hilite.me --><div style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #cccccc">$([IPython.events]).on(</span><span style="color: #cd0000">&quot;app_initialized.NotebookApp&quot;</span><span style="color: #cccccc">,</span> <span style="color: #00cd00">function</span> <span style="color: #cccccc">()</span> <span style="color: #cccccc">{</span>
+    <span style="color: #cccccc">$(</span><span style="color: #cd0000">&#39;div#header&#39;</span><span style="color: #cccccc">).hide();</span>
+    <span style="color: #cccccc">$(</span><span style="color: #cd0000">&#39;div#maintoolbar&#39;</span><span style="color: #cccccc">).hide();</span>
+<span style="color: #cccccc">});</span>
+</pre></div>
+<p>
+				On a Mac, it can be hard to find where this (The Mac Spotlight search bar and UNIX ``find`` can't find this because .ipython is a hidden directory.)
+				To find the file directory run this python command: 
+				<p>
+				<!-- HTML generated using hilite.me --><div style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #cccccc">ip</span><span style="color: #3399cc">=</span><span style="color: #cccccc">get_ipython()</span>
+<span style="color: #cccccc">locate_dir</span> <span style="color: #3399cc">=</span> <span style="color: #cccccc">ip</span><span style="color: #3399cc">.</span><span style="color: #cccccc">ipython_dir</span>
+<span style="color: #cccccc">profile_dir</span> <span style="color: #3399cc">=</span> <span style="color: #cccccc">ip</span><span style="color: #3399cc">.</span><span style="color: #cccccc">config</span><span style="color: #3399cc">.</span><span style="color: #cccccc">ProfileDir</span><span style="color: #3399cc">.</span><span style="color: #cccccc">location</span>
+<span style="color: #cdcd00">print</span><span style="color: #cccccc">(</span><span style="color: #cd0000">&quot;Main IPython file path: &quot;</span><span style="color: #3399cc">.</span><span style="color: #cccccc">format(locate_dir))</span>
+</pre></div>
+<p>
+				Once you have the $PATH, the it should be fairly obvious to find profile_default/static/custom where custom.js is contained. Just copy and paste the above code snippet in the file, and restart the IPython and it should now look like this: 
+				</p>
+				<p>
+				<img src ="ipython_menubar.png" height=50></img>
+				<p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>© 2014 Doris Jung Lin Lee. All rights reserved. This site is a modified design , originally by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. 
+</div>
+<!-- end #footer -->
+</body>
+</html>

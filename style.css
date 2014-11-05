@@ -479,6 +479,22 @@ a:hover {
 	background: url(images/img04.png) no-repeat center bottom;
 }
 
+/* One Column Content */
+#one-column {
+	overflow: hidden;
+	padding: 10px 0px 50px 0px;
+}
+
+#one-column .tbox1 {
+	float: middle;
+	width: 2000px;
+}
+#one-column .tbox2 {
+	float: middle;
+	width: 2000px;
+}
+
+
 /* Three Column Content */
 
 #three-column {
@@ -531,6 +547,9 @@ a:hover {
 .box-style .image {
 	width: 324px;
 }
+.box-style .image_span_page {
+	width: 2000px;
+}
 
 .box-style .arrow {
 }
@@ -553,6 +572,14 @@ a:hover {
 	display: inline-block;
 	margin: 1em 0em;
 	background: #000;
+	padding: 1em 2em;
+	color: #FFFFFF;
+}
+
+.button2
+{
+	margin: 0em 0em;
+	background: #001;
 	padding: 1em 2em;
 	color: #FFFFFF;
 }
