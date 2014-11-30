@@ -61,6 +61,13 @@ a:hover {
 	font-size: 18px;
 }
 
+#page-wrapper {
+	background: #FFFFFF;
+	width: 1300px;
+	margin: 10px auto;
+	border-radius: 50px;
+}
+
 /* Header */
 
 #header-wrapper {
