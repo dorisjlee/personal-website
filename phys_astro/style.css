@@ -9,10 +9,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #E5E6DD;
-	/*font-family: 'Oxygen', sans-serif;*/
-	font-family: "Serif", Georgia, Serif ,'Oxygen', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	font-size: 13px;
-	color: #52524F;
+	color: #8A8985;
 }
 
 h1, h2, h3 {
@@ -62,6 +61,13 @@ a:hover {
 	font-size: 18px;
 }
 
+#page-wrapper {
+	background: #FFFFFF;
+	width: 1300px;
+	margin: 10px auto;
+	border-radius: 50px;
+}
+
 /* Header */
 
 #header-wrapper {
@@ -103,7 +109,7 @@ a:hover {
 	padding: 50px 0px 20px 0px;
 	letter-spacing: -6px;
 	text-transform: capitalize;
-	font-size: 70px;
+	font-size: 80px;
 }
 
 #logo p {
@@ -249,7 +255,7 @@ a:hover {
 }
 
 .post .title {
-        margin: 0px 0px 30px 0px;
+	margin: 0px 0px 30px 0px;
 	padding: 0px 0px 10px 0px;
 	border-bottom: 3px solid #E0E1D6;
 	text-shadow: 1px 1px 0px #FFFFFF;

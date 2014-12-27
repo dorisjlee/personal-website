@@ -27,7 +27,7 @@ Released   : 20130406
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>RC3 Mosaics</title>
 <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../style_article.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 <div id="wrapper">
@@ -42,33 +42,50 @@ Released   : 20130406
 			</ul>
 		</div>
 	</div>
+	<div id="page-wrapper"> 
 	<div id="logo" class="container">
-		<h1><a href="#">Creating updated, scientifically-calibrated mosaic images for the RC3 Catalogue</a></h1>
-		<p></p>
+		<h1><a href="#">RC3 Mosaics</a></h1>
+		<p>Creating updated, scientifically-calibrated mosaic images for the RC3 Catalogue</p>
 	</div>
+		<center><img src="img/rc3.jpg" width=1000pt></center>
 	<div id="page" class="container">
 		<div>
 			<div class="entry">
+				<br>
 				<p>
 				The Third Reference Catalogue of Bright Galaxies (RC3) is a reasonably complete listing of 23,010 large, bright galaxies. Using the latest Sloan Digital Sky Survey's Data Release 10 (SDSS DR10) data, we provide color composite images and scientifically-calibrated FITS mosaics in all SDSS imaging bands, for all the RC3 galaxies that lie within the survey's footprint. To get a larger sky coverage, we then conduct the procedures on photographic plates taken by the Second Palomar Observatory Sky Survey (POSS-II) for the B, R, IR bands. Due to the positional inaccuracy inherent in the RC3 catalog, the mosaicking program uses a recursive algorithm for positional update first, then conduct the mosaicking procedure using IPAC's Montage.The program is generalized into a pipeline, which can be easily extended to future survey data or other source catalogs.
 				</p>
-				<p>
-				More information about the RC3 mosaicking pipeline is available on <a href="https://github.com/ProfessorBrunner/rc3-pipeline"> our GitHub repository. </a>
-				</p>
-				<p>
-				Image Gallery of all the RC3 galaxies in the <a href="http://lcdm.astro.illinois.edu/data/rc3/gallery.php"> SDSS DR10 </a> and <a href="http://lcdm.astro.illinois.edu/data/rc3/gallery_dss.php"> DPOSS-II </a>footprint. 
-				</p>
-				<p>
-				Here is an webapp that we built so that the FITS multiband images and <a href="http://lcdm.astro.illinois.edu/data/rc3/search.html"> </a>
-				</p>
-				<p> Here is a <a href="http://google-opensource.blogspot.com/2014/10/my-summer-of-code-and-galaxies.html"> blogpost</a> on the Google Open Source Blog about my summer of code experience. </p>
-				<p><a href="http://adsabs.harvard.edu/abs/2014ascl.soft11006L"> ADS Entry record  </a></p>
+
+				<br>
+				Other Links
+				<ul>
+				<li> Source code for RC3 mosaicking pipeline is available on <a href="https://github.com/ProfessorBrunner/rc3-pipeline"> our GitHub repository. </a>
+				</li>
+				<li>Image Gallery of all the RC3 galaxies in the <a href="http://lcdm.astro.illinois.edu/data/rc3/gallery.php"> SDSS DR10 </a> and <a href="http://lcdm.astro.illinois.edu/data/rc3/gallery_dss.php"> DPOSS-II </a>footprint. </li>
+				<li><a href="http://lcdm.astro.illinois.edu/data/rc3/search.html"> Searchable web database</a> containing the updated astrometry and all the FITS multi-band images for SDSS and POSS-II avaliable for download.</li>
+				<li> <a href="http://google-opensource.blogspot.com/2014/10/my-summer-of-code-and-galaxies.html"> Blogpost</a> on the Google Open Source Blog about my summer of code experience. </li>
+				<li><a href="http://adsabs.harvard.edu/abs/2014ascl.soft11006L"> NASA ADS Entry record  </a></li>
+				</ul>
 			</div>
+			
 		</div>
+			<div id="disqus_thread">
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dorisjunglinlee'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 	</div>
 </div>
 <div id="footer">
-	<p>© 2013 Doris Jung Lin Lee. All rights reserved. This site is a modified design , originally by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. 
+	<p>© 2014 Doris Jung Lin Lee. All rights reserved. This site is a modified design , originally by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. 
 </div>
 <!-- end #footer -->
 </body>
