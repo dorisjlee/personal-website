@@ -92,7 +92,7 @@ a:hover {
 
 #logo {
 	overflow: hidden;
-	height: 250px;
+	height: 300px;
 }
 
 #logo h1, #logo p {
@@ -124,7 +124,39 @@ a:hover {
 	text-decoration: none;
 	color: #3C342E;
 }
+#logo_short {
+	overflow: hidden;
+	height: 180px;
+}
+#logo_short h1, #logo_short p {
+	text-align: center;
+}
 
+#logo_short h1 {
+	padding: 50px 0px 20px 0px;
+	letter-spacing: -6px;
+	text-transform: capitalize;
+	font-size: 70px;
+}
+
+#logo_short p {
+	margin-top: -20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #696969;
+}
+
+#logo_short p a {
+	color: #696969;
+}
+
+#logo_short a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #3C342E;
+}
 /* Splash */
 
 #splash {
