@@ -12,7 +12,8 @@ body {
 	/*font-family: 'Oxygen', sans-serif;*/
 	font-family: "Serif", Georgia, Serif ,'Oxygen', sans-serif;
 	font-size: 13px;
-	color: #52524F;
+	/*color: #52524F;*/
+	color: #8A8985; 
 }
 
 h1, h2, h3 {
@@ -62,6 +63,12 @@ a:hover {
 	font-size: 18px;
 }
 
+#page-wrapper {
+	background: #FFFFFF;
+	width: 1300px;
+	margin: 10px auto;
+	border-radius: 50px;
+}
 /* Header */
 
 #header-wrapper {
@@ -124,6 +131,8 @@ a:hover {
 	text-decoration: none;
 	color: #3C342E;
 }
+
+
 #logo_short {
 	overflow: hidden;
 	height: 130px;
@@ -511,21 +520,6 @@ a:hover {
 	background: url(images/img04.png) no-repeat center bottom;
 }
 
-/* One Column Content */
-#one-column {
-	overflow: hidden;
-	padding: 10px 0px 50px 0px;
-}
-
-#one-column .tbox1 {
-	float: middle;
-	width: 2000px;
-}
-#one-column .tbox2 {
-	float: middle;
-	width: 2000px;
-}
-
 
 /* Three Column Content */
 
@@ -579,10 +573,10 @@ a:hover {
 .box-style .image {
 	width: 324px;
 }
-.box-style .image_span_page {
+/*.box-style .image_span_page {
 	width: 2000px;
 }
-
+*/
 .box-style .arrow {
 }
 
