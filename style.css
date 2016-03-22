@@ -27,12 +27,21 @@ h2 {
 }
 
 h3 {
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
 	font-size: 1.6em;
 }
-
+h5 {
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 20px;
+	color: #7D7764;
+}
 p, ul, ol {
 	margin-top: 0;
-	line-height: 180%;
+	line-height: 150%;
 }
 
 ul, ol {
@@ -513,13 +522,13 @@ img {
 
 #two-column .tbox1 {
 	float: left;
-	width: 576px;
+	width: 580px;
 	/*margin-right: 20px;*/
 }
 
 #two-column .tbox2 {
 	float: right;
-	width: 576px;
+	width: 600px;
 }
 
 /* Three Column Content */
@@ -548,7 +557,7 @@ img {
 
 .box-style {
 	background: #FFFFFF;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .box-style01
@@ -566,8 +575,9 @@ img {
 .box-style .image {
 	width: 150px;
 	height: 150px;
+
 	float: left;
-	margin: 2px;
+	margin: 2px 15px 0px 0px;
 }
 /*.box-style .image_span_page {
 	width: 2000px;
@@ -593,30 +603,74 @@ img {
 	border-radius: 10px;
 	font-size: 15px;
 }
-.box-style02 .image {
-	width: 275px;
-	height: 200px;
+/*.box-style02 img {
+	width: 250px;
 	float: left;
-	margin: 2px;
+	margin: 15px 0px 0px 0px;
+}*/
+
+.box-style02 .image {
+	width: 290px;
+	/*height: 200px;*/
+	float: left;
+	margin: 15px 0px 0px 0px;
+}
+
+.box-style02 .image2 {
+	width: 150px;
+	/*height: 200px;*/
+	float: left;
+	margin: 15px 0px 0px 0px;
 }
 
 .box-style02 h2 {
-	padding: 10px 0px;
+	margin: 5px 0px 0px 0px;
 	letter-spacing: -1px;
 	font-size: 22px;
+	/*float: right;*/
 	float: right;
+	clear: left;
+	color: #2D2D2D;
+}
+
+.box-style02 .h2 {
+	margin: 5px 50px 0px 0px;
+	letter-spacing: -1px;
+	font-size: 22px;
+	/*float: right;*/
+	/*float: left;
+	clear: left;*/
 	color: #2D2D2D;
 }
 .box-style02 .content {
 	overflow: hidden;
 	width: 500px;
-	padding: 30px;
+	padding: 5px;
+	vertical-align: middle;
 }
-.box-style02 .p {
+.box-style02 p {
 	overflow: hidden;
+	vertical-align: middle;
+	width: 200px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	
+	/*vertical-align: middle right;*/
+}
+
+.box-style02 .p1 {
+	overflow: hidden;
+	vertical-align: middle;
+	width: 200px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+}
+.box-style02 .p2 {
+	overflow: hidden;
+	vertical-align: middle;
 	width: 300px;
 	float: right;
-	padding: 50px;
+	margin: 0px 0px 0px 0px;
 }
 
 .divider {
@@ -650,6 +704,7 @@ img {
     margin: 10px
 }
 .project {
+    width: 97%;
 	float: right;
     font-family: "Oxygen";
     padding-top: 15px;
