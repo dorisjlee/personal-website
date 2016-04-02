@@ -560,6 +560,8 @@ a:hover {
 .box-style {
 	background: #FFFFFF;
 	text-align: center;
+	border-radius: 10px;
+	margin:5px;
 }
 
 .box-style01
@@ -597,6 +599,7 @@ a:hover {
 	overflow: hidden;
 	width: 324px;
 	padding: 30px;
+
 }
 
 
