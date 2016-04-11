@@ -711,14 +711,9 @@ img {
     padding-right: 15px;
     padding-bottom: 5px;
     padding-left: 10px;
-    /*background-color:  #A5A5A5;*/
-/*    border-top-style: none;*/
-/*    border-left-width: 1px;*/
-/*    border-left-style: solid;*/
-/*    border-left-color: silver;*/
 	background-color: #FFFFFF;
 	border-radius:10px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-right: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -727,6 +722,7 @@ img {
 .project h1 {
     font-weight: 900;
     font-size: 1.1em;
+    margin-top: 25px;
     margin-bottom: -3px;
 }
 
