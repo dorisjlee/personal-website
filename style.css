@@ -133,10 +133,9 @@ img {
 }
 
 #intro p {
-	margin: 20px 10px 0px 332px;
-    width: 800px;
+	margin: 25px 10px 0px 366px;
+    width: 750px;
 	font-size: 16px;
-	/*font-weight: 300;*/
 	color: #696969;
 	text-align: center;
 }
