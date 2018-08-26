@@ -237,24 +237,26 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 Package hyperref Warning: Suppressing link with empty target on input line 50.
 
-[1
+! Extra }, or forgotten \endgroup.
+l.50 ...ta Engineering Bulletin}, September 2018.}
+                                                  
+? 
+! Emergency stop.
+l.50 ...ta Engineering Bulletin}, September 2018.}
+                                                  
+End of file on the terminal!
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 109.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 5176 strings out of 493117
- 77323 string characters out of 6135433
- 165501 words of memory out of 5000000
- 8648 multiletter control sequences out of 15000+600000
+ 5166 strings out of 493117
+ 77183 string characters out of 6135433
+ 160501 words of memory out of 5000000
+ 8643 multiletter control sequences out of 15000+600000
  5505 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
+ 29i,8n,21p,1341b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
+henation exceptions out of 8191
  29i,8n,21p,1341b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
