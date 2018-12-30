@@ -18,7 +18,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 2em;
-	padding-right: 100px;
+	/*padding-right: 100px;*/
 }
 
 h2 {
@@ -718,12 +718,15 @@ img {
     margin-bottom: 5px;
     margin-left: 5px;
 }
-
+.sourcelinks{
+	margin-top: 0px;
+    margin-bottom: -5px;
+}
 .project h1 {
     font-weight: 900;
     font-size: 1.1em;
-    margin-top: 25px;
-    margin-bottom: -3px;
+	margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .project h2 {
@@ -742,3 +745,6 @@ img {
 	color: #696969;
 }
 
+.ctitle{
+	text-align: center;
+}
