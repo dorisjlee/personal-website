@@ -1,2 +1,3 @@
 files/*.synctex.gz
 files/*.log
+.DS_Store
