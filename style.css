@@ -79,6 +79,7 @@ img {
 	width: 1200px;
 	margin: 0px auto;
 	font-size: 18px;
+	clear: both;
 }
 
 #page-wrapper {
@@ -118,7 +119,7 @@ img {
 /* Intro */
 
 #intro {
-	height: 280px;
+	width:95%;
 }
 
 
@@ -418,10 +419,10 @@ img {
 /* Footer */
 
 #footer {
-	height: 100px;
 	margin: 0 auto;
 	padding: 0px 0px 0px 0px;
 	background-color: #F1F2E9;
+	clear: both;
 }
 
 #footer p {
@@ -595,7 +596,7 @@ img {
 }
 
 .paragraph{
-	width: 620px;
+	/* width: 620px; */
     text-align: left;
     margin: 9px 10px 0px 234px;
 }
@@ -701,23 +702,23 @@ img {
 }
 
 .pic {
-    width: 150px;
- 	float: left;
-    /*align-items: left;*/
-    background-color:#F1F2E9; 
-    margin: 10px
+    width: 180px;
+    float: left;
+    background-color: #F1F2E9;
+    margin: 10px 10px 5px 10px;
 }
 .project {
-    width: 97%;
-	float: right;
+	width: 97%;
+    height: 110px;
+    float: right;
     font-family: "Oxygen";
-    padding-top: 15px;
+    padding-top: 5px;
     padding-right: 15px;
     padding-bottom: 5px;
     padding-left: 10px;
-	background-color: #FFFFFF;
-	border-radius:10px;
-    margin-top: 25px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
     margin-right: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
